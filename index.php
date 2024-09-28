@@ -10,6 +10,11 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <?php
+  $id = $_SESSION['id'];
+  echo "$id";
+  ?>
+
   <h1>4象限ToDoタスク管理くん</h1>
   このwebアプケーションは、4象限マトリクスを用いたtodoタスク管理術を提供するアプリです。
   <h2>第1象限:緊急かつ重要</h2>
@@ -20,10 +25,11 @@
   <p>todo3</p>
   <h2>第4象限:緊急でも重要でもない</h2>
   <p>todo4</p>
-  <form method="post" action="/store.php">
-    <input type="text" name="content" value="">
-    <input type="submit" value="タスク追加">
-  </form>
+  <div>
+    <a href="new.php">
+      <p>新規作成</p>
+    </a>
+  </div>
   <section>
     <h2>緊急度と重要度のマトリクス</h2>
     <p>全てのタスクは「緊急度」と「重要度」の２軸で、「必須」「効果性」「錯覚」「浪費・過剰」の領域（象限）に振り分けることができます。</p>

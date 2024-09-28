@@ -19,4 +19,11 @@ function errorHandler($errNo, $errStr, $errFile, $errLine)
 }
 //以上
 
+//DB情報を定数に渡す(テスト時は書き換えること)
+define('DSN', 'mysql:host=localhost; dbname=todo_app; charset=utf8');
+define('DB_USER', 'root');
+define('DB_PASSWORD', '1qaz2wsx');
+//ユーザ情報：userinfo
+//ToDo；todos
+
 ?>
