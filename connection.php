@@ -17,9 +17,9 @@ function connectPdo()
 function createTodoData($todos)
 {
   $dbh = connectPdo();
-  $sql = 'INSERT INTO todos (content, matrix id) VALUES (:content :matrix id)';
+  $sql = 'INSERT INTO todos (content, matrix_id) VALUES (:content, :matrix_id)';
   $stmt = $dbh->prepare($sql);
   $stmt->bindValue(':content', $todos['content']);
-  $stmt->bindValue(':matrix id', $todos['matrix id']);
+  $stmt->bindValue(':matrix_id', $todos['matrix_id'], PDO::PARAM_INT);
   $stmt->execute();
 }
