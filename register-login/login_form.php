@@ -10,20 +10,22 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<h1>ログインページ</h1>
-<form action="login.php" method="post">
-<div>
-    <label>
-        メールアドレス：
-        <input type="text" name="mail" required>
-    </label>
-</div>
-<div>
-    <label>
-        パスワード：
-        <input type="password" name="pass" required>
-    </label>
-</div>
-<input type="submit" value="ログイン">
-</form>
+  <h1>ログインページ</h1>
+  <form action="login.php" method="post">
+  <div>
+      <label>
+          メールアドレス：
+          <input type="text" name="mail" required>
+      </label>
+  </div>
+  <div>
+      <label>
+          パスワード：
+          <input type="password" name="pass" required>
+      </label>
+  </div>
+  <input type="submit" value="ログイン">
+  </form>
 </body>
+<footer>
+</footer>

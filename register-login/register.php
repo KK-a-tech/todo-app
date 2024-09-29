@@ -34,6 +34,21 @@ if ($stmt->fetchColumn() > 0) {
 }
 ?>
 
-<!--メッセージの出力-->
-<p><?= $msg; ?></p>
-<?= $link; ?>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="これはWebサイト制作の練習をするためのサイトです。">
+  <meta name="keyword" content="todo, 制作, 練習">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新規会員登録</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!--メッセージの出力-->
+  <p><?= $msg; ?></p>
+  <p><?= $link; ?></p>
+</body>
+<footer>
+</footer>
