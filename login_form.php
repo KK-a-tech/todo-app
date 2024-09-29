@@ -11,7 +11,7 @@
 </head>
 <body>
 <h1>ログインページ</h1>
-<form action="store.php" method="post">
+<form action="login.php" method="post">
 <div>
     <label>
         メールアドレス：

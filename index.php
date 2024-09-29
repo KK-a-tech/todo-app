@@ -10,11 +10,6 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <?php
-  $id = $_SESSION['id'];
-  echo "$id";
-  ?>
-
   <h1>4象限ToDoタスク管理くん</h1>
   このwebアプケーションは、4象限マトリクスを用いたtodoタスク管理術を提供するアプリです。
   <h2>第1象限:緊急かつ重要</h2>
