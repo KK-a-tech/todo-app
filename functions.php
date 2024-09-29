@@ -28,14 +28,3 @@ function getSelectedTodo($id)
     return getTodoTextById($id);
 }
 
-function getTodoList()
-{
-    $records = getAllRecords();
-    if($records = ""){
-        [
-        ['content_id']=>"",
-        ['content']=>"todoがありません",
-        ['matrix_id']=>"",
-        ];
-    }
-}
