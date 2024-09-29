@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="これはWebサイト制作の練習をするためのサイトです。">
-  <meta name="keyword" content="Webサイト, 制作, 練習">
+  <meta name="keyword" content="todo, 制作, 練習">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>新規会員登録</title>
   <link rel="stylesheet" href="css/reset.css">

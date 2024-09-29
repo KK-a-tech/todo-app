@@ -5,12 +5,6 @@ function savePostedData($post)
 {
     $path = getRefererPath();
     switch ($path) {
-        case '/signup/.php':
-            createTodoData($post);
-            break;
-        case '/login_form.php':
-            login($post);
-            break;
         case '/new.php':
             createTodoData($post);
             break;

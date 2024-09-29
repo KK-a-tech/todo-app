@@ -11,7 +11,8 @@
 </head>
 <body>
   <form action="store.php" method="post">
-    <input type="hidden" name="user_id" value="<?= session_id()?>">
+    <!-- <input type="hidden" name="user_id" value="セッションid"> -->
+    <input type="hidden" name="matrix id" value=””>
     <input type="text" name="content">
     <input type="submit" value="作成">
   </form>
