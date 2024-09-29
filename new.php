@@ -12,8 +12,13 @@
 <body>
   <form action="store.php" method="post">
     <!-- <input type="hidden" name="user_id" value="セッションid"> -->
-    <input type="hidden" name="matrix id" value=””>
     <input type="text" name="content">
+    <select name="matrix id">
+    <option value='1'>第1象限</option>
+    <option value="2">第2象限</option>
+    <option value="3">第3象限</option>
+    <option value="4">第4象限</option>
+    </select>
     <input type="submit" value="作成">
   </form>
   <div>
