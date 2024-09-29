@@ -8,6 +8,9 @@ function savePostedData($post)
         case '/new.php':
             createTodoData($post);
             break;
+        case '/edit.php':
+            updateTodoData($post);
+            break;
         default:
             break;
     }
@@ -17,4 +20,22 @@ function getRefererPath()
 {
     $urlArray = parse_url($_SERVER['HTTP_REFERER']);
     return $urlArray['path'];
+}
+
+//URLからidを取得する
+function getSelectedTodo($id)
+{
+    return getTodoTextById($id);
+}
+
+function getTodoList()
+{
+    $records = getAllRecords();
+    if($records = ""){
+        [
+        ['content_id']=>"",
+        ['content']=>"todoがありません",
+        ['matrix_id']=>"",
+        ];
+    }
 }
